@@ -1,0 +1,96 @@
+@font-face {
+  font-family: couture;
+  src: url(fonts/couture-bld.otf);
+}
+
+body {
+  background: #232323;
+}
+
+
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body a:hover {
+  color: #fff;
+}
+
+/*navbar area*/
+
+.navbar {
+  width: 100%;
+  height: 75px;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-left: 20px;
+  color: #fff;
+  font-family: couture;
+  letter-spacing: 2px;
+  font-size: 2em;
+  float: left;
+}
+
+.exit {
+  padding-top: 15px;
+  padding-right: 20px;
+  color: #fff;
+  font-family: couture;
+  float: right;
+  font-size: 2em;
+}
+
+/*flexbox area*/
+
+.container {
+  padding: .75vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+
+.container div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 400px;
+  margin: .75vw;
+  padding: 10px;
+}
+.container div img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 400px) {
+  header div { margin: 0; }
+  header { padding: 0; }
+  .logo {
+    font-size: 1.25em;
+    letter-spacing: 1px;
+  }
+
+  .exit {
+    font-size: 1.25em;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+
+  .container div {
+    padding: 5px;
+  }
+}
