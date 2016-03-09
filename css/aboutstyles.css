@@ -45,6 +45,18 @@ img {
   letter-spacing: 1.5px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4af37;
+}
+
+a:visited {
+  color: #000;
+}
+
 .about {
   font-family: nordica;
   font-size: 1.5em;
