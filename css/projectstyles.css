@@ -47,7 +47,7 @@ body a:hover {
 
 .container {
   padding: .75vw;
-  font-size: 0;
+  font-size: 1em;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   -ms-flex-direction: column;
