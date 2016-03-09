@@ -8,13 +8,18 @@
   src: url(fonts/NordicaHairline.otf);
 }
 
+@font-face {
+  font-family: social;
+  src: url(fonts/social.ttf);
+}
+
+body {
+  background-color: #d4af37;
+}
+
 * {
     box-sizing: border-box;
     padding: 10px;
-}
-
-img {
-  width: 100%;
 }
 
 .row:after {
@@ -41,28 +46,26 @@ img {
 
 .title {
   font-family: couture;
-  font-size: 2.5em;
-  letter-spacing: 1.5px;
+  font-size: 2em;
+  text-align: right;
+}
+
+.logos {
+  font-family: social;
+  font-size: 5em;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #d4af37;
+  color: #fff;
 }
 
 a:visited {
-  color: #000;
+  color: #fff;
 }
 
 .about {
   font-family: nordica;
-  font-size: 1.5em;
-  color: #888888;
-}
-
-.gold {
-  color: #d4af37;
+  font-size: 2em;
 }

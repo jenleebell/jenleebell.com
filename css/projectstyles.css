@@ -70,6 +70,14 @@ body a:hover {
   height: auto;
 }
 
+.gold {
+  color: #d4af37;
+}
+
+.item {
+  color: #fff;
+}
+
 
 
 /*media queries*/
