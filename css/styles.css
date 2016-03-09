@@ -12,7 +12,12 @@
 
 * {
   box-sizing: border-box;
-}
+ }
+
+ body {
+   height: 100%;
+   width: 100%;
+ }
 
 
 .logo {
@@ -20,6 +25,14 @@
   height: 100%;
   float: left;
   text-align: center;
+}
+
+.title-media {
+  visibility: hidden;
+}
+
+.about-media {
+  visibility: hidden;
 }
 
 
@@ -33,6 +46,10 @@
 
 }
 
+.main img {
+  height: 100%;
+  width: 100%;
+}
 
 /* deets baby deets */
 
@@ -49,7 +66,7 @@
 .about {
   margin-top: 10px;
   font-family: nordica;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: #888888;
   padding: 30px;
   line-height: 35px;
@@ -65,25 +82,20 @@
   color: white;
 }
 
-/*
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-top: 20px;
-}
 
 a {
-  text-decoration: none;
-  color: #787471;
+  text-decoration: none;;
+  color: #d4af37;
+
 }
 
 a:hover {
   color: #000;
-}*/
+}
+
+a:visited {
+  color: #d4af37;
+}
 
 /* main area */
 
@@ -98,20 +110,37 @@ a:hover {
 
 @media screen and (max-width: 480px) {
 
-  .logo {
-    position: absolute;
-    top: 0;
+  .title-media {
+    visibility: visible;
     text-align: center;
     width: 100%;
+    font-family: couture;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+  }
+
+  .about-media {
+    visibility: visible;
+    margin-top: -10px;
+    font-family: nordica;
+    font-size: 1.5em;
+    color: #888888;
+    width: 100%;
+  }
+
+  .title {
+    visibility: hidden;
+    height: 0;
   }
 
   .about {
     visibility: hidden;
+    height: 0;
   }
 
   .main {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
 }
